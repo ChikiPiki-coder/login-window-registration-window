@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="ru" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorization</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/authorization}" th:object="${person}">
+    <label for="name" >Enter name</label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <br/>
+    <label for="password" >Enter password</label>
+    <input type="password" th:field="*{password}" id="password"/>
+    <br/>
+    <label for="status" >Enter status</label>
+    <input type="text" th:field="*{status}" id="status"/>
+    <br/>
+    <input type="submit" value="Sign in!"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="ru" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+Sorry you are not registered.
+<form th:method="GET" th:action="@{/authorization/new}" >
+<input type="submit" value="Sign up!"/>
+</form>
+</body>
+</html>
